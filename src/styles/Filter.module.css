@@ -1,0 +1,31 @@
+/* Filter.module.css */
+.filterContainer {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 15px; /* Space between buttons */
+  margin-bottom: 20px; /* Add some space below the buttons */
+}
+
+.filterButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.filterButton:hover {
+  background-color: #0056b3; /* Darker blue when hovered */
+  transform: scale(1.2); /* Slight scaling effect */
+}
+
+.filterButton:active {
+  transform: scale(1.09); 
+  font-weight: bold; 
+  border: 2px solid #000408; /* Darker blue border when active */
+  box-shadow: 0 0 15px 5px rgba(0, 24, 243, 0.8), 0 0 20px 10px rgba(76, 175, 80, 0.5);
+  border: 2px solid gold;
+}

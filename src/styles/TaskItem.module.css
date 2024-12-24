@@ -1,0 +1,104 @@
+/* Filter.module.css */
+
+.taskItemContainer {
+  display: flex;
+  align-items: center;  /* Vertically center the content */
+  justify-content: space-between;  /* Space between the task text and the buttons */
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%; 
+  margin-left: 10%;
+}
+
+.taskText {
+  flex: 1;  /* Allow task text to take up available space */
+  text-align: left;
+  color: rgb(223, 73, 239);
+}
+
+.buttonContainer {
+  display: flex;  /* Align buttons horizontally */
+  gap: 10px;  /* Add space between buttons */
+}
+
+.taskDescription {
+  font-style: italic;
+  margin-top: 10px;
+  color: #555;
+}
+
+.taskDescription p {
+  margin-top: 10px; /* Add some space above the description */
+  line-height: 1.5; /* Improve readability */
+}
+
+.taskDescription strong {
+  display: block;  /* Forces the "This task can be performed by:" part to start on a new line */
+  margin-bottom: 5px; /* Add some space below the title */
+}
+
+.button {
+  background-color: #007bff;  /* Default blue color for buttons */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.complete{
+  background-color: #42f13f;  /* Default blue color for buttons */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #0056b3;  /* Darken button color on hover */
+}
+
+.button:active {
+  transform: scale(0.98);  /* Button shrink effect on click */
+}
+
+.complete:hover {
+  background-color: #a6f702;  /* Darken button color on hover */
+}
+
+.complete:active {
+  transform: scale(0.98);  /* Button shrink effect on click */
+}
+
+.deleteButton {
+  background-color: red;  /* Red color for delete button */
+}
+
+.deleteButton:hover {
+  background-color: #f23c3c;  /* Darken button color on hover */
+}
+
+.deleteButton:active {
+  transform: scale(0.98);  /* Button shrink effect on click */
+}
+
+.hideButton {
+  background-color: #4a4848; /* Red background */
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.hideButton:hover {
+  background-color: #686565; /* Darker red on hover */
+}
+

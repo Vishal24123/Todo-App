@@ -1,0 +1,37 @@
+.taskList {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .taskListItem {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .completedTask {
+    text-decoration: line-through;
+  }
+  
+  .taskActions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .deleteButton {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .deleteButton:hover {
+    background-color: #e53935;
+  }
+  

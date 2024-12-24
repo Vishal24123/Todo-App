@@ -1,0 +1,49 @@
+/* Styles for the header element */
+.header {
+  background-color: #4CAF50; /* Green background */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center; /* Center the navigation */
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+nav {
+  width: 100%;
+  max-width: 1200px; /* Keep the nav centered and limited in width */
+}
+
+/* List styling */
+.list {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+}
+
+/* List item styling */
+.list li {
+  margin: 0 15px; /* Space between items */
+}
+
+/* Style for NavLink */
+a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text color */
+  font-size: 18px;
+  font-weight: 600; /* Make text bold */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Styling for active NavLink */
+.active {
+  color: #FFD700; /* Gold color for active link */
+  transform: scale(1.1); /* Slightly enlarge active link */
+}
+
+/* Hover effect for links */
+a:hover {
+  color: #ddd; /* Change to light gray when hovered */
+  transform: scale(1.05); /* Slightly enlarge when hovered */
+}

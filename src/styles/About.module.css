@@ -1,0 +1,152 @@
+/* Overall page background */
+.aboutPage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content at the top of the page */
+  height: auto; /* Full viewport height */
+  background-color: #f0fcac; /* Light background color */
+  padding: 0 20px; /* Some padding for small screen devices */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+/* Main content container (image slider + text) */
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Ensure the content starts from the top */
+  width: 100%;
+  max-width: 900px; /* Max width for large screens */
+  background-color: #f5f5f5; /* White background for content */
+  padding: 30px; /* Add padding to the content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Image Slider */
+.imageSliderContainer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.imageSlider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%; /* Ensure the slider takes full height */
+}
+
+.sliderImage {
+  width: 100%;
+  height: 100%; /* Ensure the images take up the full height of the container */
+  object-fit: cover; /* Ensure images cover the container without stretching */
+  border-radius: 8px;
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+/* Text content below the slider */
+.textContent {
+  margin-top: 30px; /* Add extra space between slider and content */
+  width: 100%; /* Make sure it doesn't exceed the width */
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for text content */
+  /* Ensure the content doesn't exceed the available space */
+  overflow-y: auto; /* Make the content scrollable if it overflows */
+  box-sizing: border-box; /* Include padding in height calculation */
+  color: #333; /* Text color */
+  font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700; /* Make the title bold */
+  letter-spacing: 1px; /* Slightly increased letter spacing */
+  text-transform: uppercase; /* Uppercase letters for style */
+}
+
+/* Description Text */
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Feature list */
+.featuresList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.featuresList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  padding-left: 40px; /* Space for custom bullet icon */
+  position: relative;
+  font-family: 'Roboto', sans-serif; /* Use a modern sans-serif font */
+}
+
+.featuresList li::before {
+  content: "✓"; /* Tick mark character */
+  position: absolute;
+  left: 10px;
+  font-size: 1.5rem;
+  color: #8a9fbd; /* Lavender Blue color for tick mark */
+}
+
+/* Slight right shift */
+.featuresList li {
+  padding-left: 50px; /* Additional padding to shift text slightly to the right */
+}
+
+.featuresList li:nth-child(odd)::before {
+  color: #7c4dff; /* Lavender Blue color for odd items */
+}
+
+.featuresList li:nth-child(even)::before {
+  color: #9c6ee5; /* Lavender Blue color for even items */
+}
+
+/* Technology section */
+.technology {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #555;
+  font-style: italic; /* Italicize the technology section */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .aboutContainer {
+    padding: 15px; /* Less padding on smaller screens */
+  }
+
+  .title {
+    font-size: 1.6rem; /* Smaller font size for mobile */
+  }
+
+  .description {
+    font-size: 1rem; /* Smaller description text */
+  }
+
+  .featuresList li {
+    font-size: 1rem; /* Smaller font for features list */
+  }
+
+  .technology {
+    font-size: 1rem; /* Smaller font size for tech section */
+  }
+}
