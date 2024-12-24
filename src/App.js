@@ -85,7 +85,7 @@ function App() {
           ],
           temperature: 1,
           top_p: 1,
-          max_tokens: 2048,
+          max_tokens: 100,
         },
       });
       console.log(response.data);
