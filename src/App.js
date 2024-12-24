@@ -81,7 +81,7 @@ function App() {
         data: {
           model: "gpt-4", // Use a valid model name
           messages: [
-            { role: "user", content: taskText }
+            { role: "user", content: `How to perform: ${taskText}` }
           ],
           temperature: 1,
           top_p: 1,
